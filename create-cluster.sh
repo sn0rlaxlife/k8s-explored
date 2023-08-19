@@ -3,6 +3,8 @@
 kind create cluster --config=- <<EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
+featureGates:
+  ValidatingAdmissionPolicy: true
 networking:
   ipFamily: ipv6
   apiServerAddress: 127.0.0.1
