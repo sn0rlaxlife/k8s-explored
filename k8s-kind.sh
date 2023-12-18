@@ -4,9 +4,9 @@ kind create cluster --config=- <<EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 featureGates:
-  "ValidatingAdmissionPolicy": true
+  ValidatingAdmissionPolicy: true
 runtimeConfig:
-  "admissionregistration.k8s.io/v1beta1": "true"
+  admissionregistration.k8s.io/v1beta1
 networking:
   ipFamily: ipv6
   apiServerAddress: 127.0.0.1
