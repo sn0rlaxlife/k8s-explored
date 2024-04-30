@@ -6,8 +6,6 @@ name: test-cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 featureGates:
   ValidatingAdmissionPolicy: true
-runtimeConfig:
-  "admissionregistration.k8s.io/v1beta1": true
 name: ambient
 nodes:
 - role: control-plane
