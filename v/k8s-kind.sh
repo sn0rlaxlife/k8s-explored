@@ -8,10 +8,6 @@ featureGates:
   ValidatingAdmissionPolicy: true
 runtimeConfig:
   "admissionregistration.k8s.io/v1beta1": true
-networking:
-  ipFamily: ipv6
-  apiServerAdress: 127.0.0.1
-  apiServerPort: 6443
 name: ambient
 nodes:
 - role: control-plane
