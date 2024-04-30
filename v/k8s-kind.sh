@@ -2,7 +2,6 @@
 
 kind create cluster --config=- <<EOF
 kind: Cluster
-name: test-cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 featureGates:
   ValidatingAdmissionPolicy: true
